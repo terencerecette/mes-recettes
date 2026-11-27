@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C85A32" />
+      <stop offset="100%" stop-color="#B44B25" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <!-- Cloche / toque minimaliste centrée avec marge de sécurité ~18% -->
+  <circle cx="256" cy="144" r="22" fill="#FAF8F5" />
+  <path
+    d="M126 300 C126 220 184 166 256 166 C328 166 386 220 386 300 Z"
+    fill="#FAF8F5"
+  />
+  <!-- Plateau -->
+  <rect x="108" y="314" width="296" height="28" rx="14" fill="#FAF8F5" />
+  <!-- Petite feuille sauge sur la cloche -->
+  <path
+    d="M286 218 C322 206 346 232 338 264 C306 272 280 248 286 218 Z"
+    fill="#4A7C59"
+  />
+  <!-- Livre / ligne de recette en bas -->
+  <rect x="172" y="366" width="168" height="14" rx="7" fill="#FAF8F5" opacity="0.88" />
+</svg>

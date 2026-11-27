@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #faf8f5;
+    color: #26211d;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    background-color: #faf8f5;
+    color: #26211d;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  /* Évite le zoom automatique sur Safari iOS lors du focus sur un champ */
+  @media (max-width: 767px) {
+    input,
+    select,
+    textarea {
+      font-size: 16px;
+    }
+  }
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.pb-mobile-nav {
+  padding-bottom: calc(5.25rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  .pb-mobile-nav {
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* Scrollbar discrète */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ded7cc;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c8bfb1;
+}
